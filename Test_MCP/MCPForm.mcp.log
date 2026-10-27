@@ -1,0 +1,282 @@
+12:19:04  MCP server listening on http://127.0.0.1:8765/mcp
+12:19:07  tool: add_control { "type" : "Button", "text" : "Hello", "left" : 20, "top" : 20, "onclick_message" : "Hi from MCP" }
+12:19:07  tool: set_property { "target" : "Button1", "property" : "Font.Style", "value" : "[fsBold]" }
+12:19:07  tool: set_form { "color" : "#E0F0FF", "caption" : "MCP test" }
+12:19:07  tool: screenshot {}
+12:19:07  tool: clear_form {}
+12:19:07  tool: set_form { "color" : "clDefault", "caption" : "Form1" }
+12:19:30  MCP server listening on http://127.0.0.1:8765/mcp
+12:19:33  tool: add_control { "type" : "Label", "text" : "?????? MCP", "left" : 20, "top" : 20 }
+12:19:33  tool: screenshot {}
+12:19:33  tool: clear_form {}
+12:19:42  tool: add_control { "type" : "Label", "text" : "สวัสดี MCP", "left" : 20, "top" : 20 }
+12:19:42  tool: get_property { "target" : "Label1", "property" : "Caption" }
+12:19:49  tool: clear_form {}
+2026-10-19 12:31:36.469  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 12:31:36.672  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 12:31:38.911  client initialized: claude-code 2.5.0
+2026-10-19 12:31:38.947  tool: add_control { "type" : "Button", "text" : "ทดสอบ", "left" : 20, "top" : 20 }
+2026-10-19 12:31:38.984  tool: delete_control { "name" : "MainMenu1" }
+2026-10-19 12:31:38.985  tool error: delete_control: Only controls on the form can be deleted
+2026-10-19 12:31:39.010  404 POST /wrong from 127.0.0.1
+2026-10-19 12:31:39.057  tool: get_status { "log_lines" : 5 }
+2026-10-19 12:31:39.058  tool error: get_status: Exception: Unknown type in JSONObject constructor: 17
+2026-10-19 12:31:50.284  MCP server stopped
+2026-10-19 12:31:56.012  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 12:31:56.215  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 12:31:58.411  client initialized: claude-code 2.5.0
+2026-10-19 12:31:58.486  tool: add_control { "type" : "Button", "text" : "ทดสอบ", "left" : 20, "top" : 20 }
+2026-10-19 12:31:58.514  tool: delete_control { "name" : "MainMenu1" }
+2026-10-19 12:31:58.514  tool error: delete_control: Only controls on the form can be deleted
+2026-10-19 12:31:58.543  404 POST /wrong from 127.0.0.1
+2026-10-19 12:31:58.554  tool: get_status { "log_lines" : 5 }
+2026-10-19 12:32:36.442  MCP server stopped
+2026-10-19 12:32:36.443  settings saved: C:\Users\MS\Desktop\Test_MCP\MCPForm.ini
+2026-10-19 12:32:36.443  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 12:32:36.644  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 12:32:44.707  tool: clear_form {}
+2026-10-19 12:36:29.706  client initialized: config-test 1
+2026-10-19 12:36:39.282  MCP server stopped
+2026-10-19 12:36:39.282  settings saved: C:\Users\MS\Desktop\Test_MCP\MCPForm.ini
+2026-10-19 12:36:39.283  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 12:36:39.484  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 12:38:09.653  MCP server stopped
+2026-10-19 12:42:58.611  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 12:42:58.814  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 12:43:03.663  client initialized: lazarus-mcp-client 1.0.0
+2026-10-19 12:43:03.735  tool: get_form {}
+2026-10-19 12:43:03.742  tool: no_such_tool {}
+2026-10-19 12:43:03.743  tool error: no_such_tool: Unknown tool: no_such_tool
+2026-10-19 12:43:37.670  tool: add_control { "type" : "Button", "name" : "btnHello", "text" : "Hello from MCP", "left" : 40, "top" : 40, "width" : 160, "height" : 40 }
+2026-10-19 12:43:48.839  client initialized: lazarus-mcp-client 1.0.0
+2026-10-19 12:44:18.747  tool: screenshot {}
+2026-10-19 12:44:30.242  tool: clear_form {}
+2026-10-19 12:54:47.834  MCP server stopped
+2026-10-19 13:35:49.220  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:35:49.584  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:36:09.754  client connected: client-1 1.1.0 from 127.0.0.1 (session 102dd252)
+2026-10-19 13:36:10.180  tool: add_control  from client-1  { "type" : "Button", "name" : "btnFromClient1", "text" : "Sent via client-1", "left" : 30, "top" : 30, "width" : 180, "height" : 36 }
+2026-10-19 13:36:27.568  client disconnected: client-1
+2026-10-19 13:36:39.755  client connected: client-1 1.1.0 from 127.0.0.1 (session e44c94de)
+2026-10-19 13:36:40.198  tool: add_control  from client-1  { "type" : "Button", "name" : "btnFromClient1", "text" : "Sent via client-1", "left" : 30, "top" : 30, "width" : 180, "height" : 36 }
+2026-10-19 13:36:40.211  tool error: add_control: Name "btnFromClient1" already exists
+2026-10-19 13:37:35.638  client disconnected: client-1
+2026-10-19 13:37:36.142  MCP server stopped
+2026-10-19 13:37:59.330  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:37:59.887  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:38:03.371  client connected: client-1 1.1.0 from 127.0.0.1 (session 6a3bd905)
+2026-10-19 13:38:03.672  client connected: claude-code 1 from 127.0.0.1 (session 26822149)
+2026-10-19 13:38:03.708  tool: get_form  from claude-code  {}
+2026-10-19 13:38:05.848  tool: get_form  from client-1  {}
+2026-10-19 13:38:06.576  tool: get_form  from client-1  {}
+2026-10-19 13:38:07.185  tool: get_form  from client-1  {}
+2026-10-19 13:38:07.667  tool: get_form  from client-1  {}
+2026-10-19 13:38:08.307  tool: get_form  from client-1  {}
+2026-10-19 13:38:08.836  tool: get_form  from client-1  {}
+2026-10-19 13:38:09.266  tool: get_form  from client-1  {}
+2026-10-19 13:38:09.765  tool: get_form  from client-1  {}
+2026-10-19 13:38:30.581  tool: get_form  from client-1  {}
+2026-10-19 13:38:31.085  tool: get_form  from client-1  {}
+2026-10-19 13:38:31.568  tool: get_form  from client-1  {}
+2026-10-19 13:38:32.052  tool: get_form  from client-1  {}
+2026-10-19 13:38:32.453  tool: get_form  from client-1  {}
+2026-10-19 13:38:32.952  tool: get_form  from client-1  {}
+2026-10-19 13:38:33.435  tool: get_form  from client-1  {}
+2026-10-19 13:38:33.957  tool: get_form  from client-1  {}
+2026-10-19 13:38:53.490  tool: get_form  from client-1  {}
+2026-10-19 13:38:53.994  tool: get_form  from client-1  {}
+2026-10-19 13:38:54.471  tool: get_form  from client-1  {}
+2026-10-19 13:38:54.894  tool: get_form  from client-1  {}
+2026-10-19 13:38:55.445  tool: get_form  from client-1  {}
+2026-10-19 13:38:55.998  tool: get_form  from client-1  {}
+2026-10-19 13:38:56.519  tool: get_form  from client-1  {}
+2026-10-19 13:38:57.013  tool: get_form  from client-1  {}
+2026-10-19 13:40:18.306  MCP server stopped
+2026-10-19 13:40:52.356  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:40:52.560  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:40:58.229  client connected: client-1 1.1.0 from 127.0.0.1 (session b9a618ed)
+2026-10-19 13:40:58.496  client connected: claude-code 1 from 127.0.0.1 (session 4dde0982)
+2026-10-19 13:40:58.527  tool: get_form  from claude-code  {}
+2026-10-19 13:41:07.184  client connected: claude-code 1 from 127.0.0.1 (session 023b511c)
+2026-10-19 13:41:07.215  tool: get_form  from claude-code  {}
+2026-10-19 13:41:07.327  client disconnected: claude-code
+2026-10-19 13:41:07.628  client connected: claude-code 1 from 127.0.0.1 (session 79725855)
+2026-10-19 13:41:07.638  tool: get_form  from claude-code  {}
+2026-10-19 13:41:07.649  client disconnected: claude-code
+2026-10-19 13:41:07.980  client connected: claude-code 1 from 127.0.0.1 (session 501b454a)
+2026-10-19 13:41:07.985  tool: get_form  from claude-code  {}
+2026-10-19 13:41:07.997  client disconnected: claude-code
+2026-10-19 13:41:08.363  client connected: claude-code 1 from 127.0.0.1 (session b3dd1d55)
+2026-10-19 13:41:08.369  tool: get_form  from claude-code  {}
+2026-10-19 13:41:08.395  client disconnected: claude-code
+2026-10-19 13:41:08.772  client connected: claude-code 1 from 127.0.0.1 (session 487c5087)
+2026-10-19 13:41:08.776  tool: get_form  from claude-code  {}
+2026-10-19 13:41:08.784  client disconnected: claude-code
+2026-10-19 13:41:09.148  client connected: claude-code 1 from 127.0.0.1 (session 5b1a6708)
+2026-10-19 13:41:09.152  tool: get_form  from claude-code  {}
+2026-10-19 13:41:09.159  client disconnected: claude-code
+2026-10-19 13:41:09.524  client connected: claude-code 1 from 127.0.0.1 (session 89777cb4)
+2026-10-19 13:41:09.547  tool: get_form  from claude-code  {}
+2026-10-19 13:41:09.554  client disconnected: claude-code
+2026-10-19 13:41:10.003  client connected: claude-code 1 from 127.0.0.1 (session 3202449d)
+2026-10-19 13:41:10.004  tool: get_form  from claude-code  {}
+2026-10-19 13:41:10.115  client disconnected: claude-code
+2026-10-19 13:41:10.581  client connected: claude-code 1 from 127.0.0.1 (session 16969e66)
+2026-10-19 13:41:10.582  tool: get_form  from claude-code  {}
+2026-10-19 13:41:10.689  client disconnected: claude-code
+2026-10-19 13:41:11.068  client connected: claude-code 1 from 127.0.0.1 (session 3cae7119)
+2026-10-19 13:41:11.069  tool: get_form  from claude-code  {}
+2026-10-19 13:41:11.165  client disconnected: claude-code
+2026-10-19 13:41:31.060  client connected: claude-code 1 from 127.0.0.1 (session aec6d606)
+2026-10-19 13:41:31.096  tool: get_form  from claude-code  {}
+2026-10-19 13:41:31.222  client disconnected: claude-code
+2026-10-19 13:41:31.547  client connected: claude-code 1 from 127.0.0.1 (session 882b3292)
+2026-10-19 13:41:31.547  tool: get_form  from claude-code  {}
+2026-10-19 13:41:31.653  client disconnected: claude-code
+2026-10-19 13:41:32.119  client connected: claude-code 1 from 127.0.0.1 (session 65e0a89c)
+2026-10-19 13:41:32.222  tool: get_form  from claude-code  {}
+2026-10-19 13:41:32.327  client disconnected: claude-code
+2026-10-19 13:41:32.932  client connected: claude-code 1 from 127.0.0.1 (session 327e7fa3)
+2026-10-19 13:41:32.933  tool: get_form  from claude-code  {}
+2026-10-19 13:41:33.038  client disconnected: claude-code
+2026-10-19 13:41:33.564  client connected: claude-code 1 from 127.0.0.1 (session a79e7abd)
+2026-10-19 13:41:33.565  tool: get_form  from claude-code  {}
+2026-10-19 13:41:33.661  client disconnected: claude-code
+2026-10-19 13:41:34.156  client connected: claude-code 1 from 127.0.0.1 (session ed1e2b75)
+2026-10-19 13:41:34.157  tool: get_form  from claude-code  {}
+2026-10-19 13:41:34.256  client disconnected: claude-code
+2026-10-19 13:41:34.643  client connected: claude-code 1 from 127.0.0.1 (session 6a0f8e94)
+2026-10-19 13:41:34.643  tool: get_form  from claude-code  {}
+2026-10-19 13:41:34.737  client disconnected: claude-code
+2026-10-19 13:41:35.131  client connected: claude-code 1 from 127.0.0.1 (session f69d5002)
+2026-10-19 13:41:35.132  tool: get_form  from claude-code  {}
+2026-10-19 13:41:35.230  client disconnected: claude-code
+2026-10-19 13:41:35.618  client connected: claude-code 1 from 127.0.0.1 (session b857038b)
+2026-10-19 13:41:35.619  tool: get_form  from claude-code  {}
+2026-10-19 13:41:35.716  client disconnected: claude-code
+2026-10-19 13:41:36.120  client connected: claude-code 1 from 127.0.0.1 (session ffa775dd)
+2026-10-19 13:41:36.121  tool: get_form  from claude-code  {}
+2026-10-19 13:41:36.218  client disconnected: claude-code
+2026-10-19 13:41:54.873  client disconnected: client-1
+2026-10-19 13:41:55.330  MCP server stopped
+2026-10-19 13:42:18.174  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:42:18.385  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:42:22.220  client connected: client-2 1.1.0 from 127.0.0.1 (session b087f44f)
+2026-10-19 13:50:23.294  client disconnected: client-2
+2026-10-19 13:52:07.988  MCP server stopped
+2026-10-19 13:52:37.632  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:52:37.849  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:52:39.127  client connected: client-1 1.1.0 from 127.0.0.1 (session fb0ec80e)
+2026-10-19 13:52:39.593  client connected: client-2 1.1.0 from 127.0.0.1 (session 2887e6b0)
+2026-10-19 13:52:42.634  uplink connected: server-2 http://127.0.0.1:8766/mcp
+2026-10-19 13:53:01.546  tool: get_form  from client-2  {}
+2026-10-19 13:53:01.637  client connected: tester 1 from 127.0.0.1 (session ba91ed28)
+2026-10-19 13:53:01.681  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 1, "value" : 65 } }
+2026-10-19 13:53:01.682  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:01.736  client disconnected: tester
+2026-10-19 13:53:04.626  tool: get_form  from client-2  {}
+2026-10-19 13:53:04.666  client connected: tester 1 from 127.0.0.1 (session a0bdc518)
+2026-10-19 13:53:04.674  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 0 } }
+2026-10-19 13:53:04.674  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:04.766  client disconnected: tester
+2026-10-19 13:53:05.037  tool: get_form  from client-2  {}
+2026-10-19 13:53:05.071  client connected: tester 1 from 127.0.0.1 (session 361b4171)
+2026-10-19 13:53:05.076  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 8 } }
+2026-10-19 13:53:05.076  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:05.163  client disconnected: tester
+2026-10-19 13:53:05.471  tool: get_form  from client-2  {}
+2026-10-19 13:53:05.494  client connected: tester 1 from 127.0.0.1 (session e7cfe8dd)
+2026-10-19 13:53:05.500  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 16 } }
+2026-10-19 13:53:05.500  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:05.605  client disconnected: tester
+2026-10-19 13:53:05.933  tool: get_form  from client-2  {}
+2026-10-19 13:53:05.966  client connected: tester 1 from 127.0.0.1 (session 5b454689)
+2026-10-19 13:53:05.972  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 24 } }
+2026-10-19 13:53:05.973  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:06.057  client disconnected: tester
+2026-10-19 13:53:06.451  tool: get_form  from client-2  {}
+2026-10-19 13:53:06.490  client connected: tester 1 from 127.0.0.1 (session 5d0f65f4)
+2026-10-19 13:53:06.495  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 32 } }
+2026-10-19 13:53:06.495  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:06.541  client disconnected: tester
+2026-10-19 13:53:06.809  tool: get_form  from client-2  {}
+2026-10-19 13:53:06.843  client connected: tester 1 from 127.0.0.1 (session aadc30f3)
+2026-10-19 13:53:06.848  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 40 } }
+2026-10-19 13:53:06.848  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:06.909  client disconnected: tester
+2026-10-19 13:53:07.218  tool: get_form  from client-2  {}
+2026-10-19 13:53:07.256  client connected: tester 1 from 127.0.0.1 (session 70c7a838)
+2026-10-19 13:53:07.262  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 48 } }
+2026-10-19 13:53:07.262  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:07.340  client disconnected: tester
+2026-10-19 13:53:07.584  tool: get_form  from client-2  {}
+2026-10-19 13:53:07.620  client connected: tester 1 from 127.0.0.1 (session 1aea8a85)
+2026-10-19 13:53:07.625  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 56 } }
+2026-10-19 13:53:07.625  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:07.672  client disconnected: tester
+2026-10-19 13:53:08.041  tool: get_form  from client-2  {}
+2026-10-19 13:53:08.082  client connected: tester 1 from 127.0.0.1 (session 81082863)
+2026-10-19 13:53:08.090  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 64 } }
+2026-10-19 13:53:08.090  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:08.185  client disconnected: tester
+2026-10-19 13:53:08.392  tool: get_form  from client-2  {}
+2026-10-19 13:53:08.429  client connected: tester 1 from 127.0.0.1 (session a2b44ba0)
+2026-10-19 13:53:08.434  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 72 } }
+2026-10-19 13:53:08.435  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:08.478  client disconnected: tester
+2026-10-19 13:53:08.706  tool: get_form  from client-2  {}
+2026-10-19 13:53:08.743  client connected: tester 1 from 127.0.0.1 (session fd497a11)
+2026-10-19 13:53:08.749  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 80 } }
+2026-10-19 13:53:08.750  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:08.784  client disconnected: tester
+2026-10-19 13:53:09.120  tool: get_form  from client-2  {}
+2026-10-19 13:53:09.157  client connected: tester 1 from 127.0.0.1 (session de780aaa)
+2026-10-19 13:53:09.164  tool: uplink_call  from tester  { "name" : "set_analog", "arguments" : { "index" : 2, "value" : 88 } }
+2026-10-19 13:53:09.165  uplink_call server-2.set_analog (from tester)
+2026-10-19 13:53:09.198  client disconnected: tester
+2026-10-19 13:53:27.987  client disconnected: client-1
+2026-10-19 13:53:28.262  client disconnected: client-2
+2026-10-19 13:53:28.373  uplink disconnected
+2026-10-19 13:53:28.463  MCP server stopped
+2026-10-19 13:53:41.407  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 13:53:41.611  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 13:53:42.555  client connected: client-1 1.1.0 from 127.0.0.1 (session d977a489)
+2026-10-19 13:53:44.633  client connected: client-2 1.1.0 from 127.0.0.1 (session 7ea6f48b)
+2026-10-19 13:53:46.415  uplink connected: server-2 http://127.0.0.1:8766/mcp
+2026-10-19 13:54:02.666  tool: get_form  from client-2  {}
+2026-10-19 13:54:02.972  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.169  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.392  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.518  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.680  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.811  tool: get_form  from client-2  {}
+2026-10-19 13:54:03.974  tool: get_form  from client-2  {}
+2026-10-19 14:04:30.352  uplink disconnected
+2026-10-19 14:04:30.667  MCP server stopped
+2026-10-19 14:06:10.029  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 14:06:10.231  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 14:06:30.039  uplink connected: server-2 http://127.0.0.1:8766/mcp
+2026-10-19 14:09:29.861  uplink disconnected
+2026-10-19 14:09:29.909  MCP server stopped
+2026-10-19 14:13:48.467  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 14:13:49.039  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 14:13:49.388  client connected: client-1 1.1.0 from 127.0.0.1 (session 4da6c61a)
+2026-10-19 14:13:49.532  client connected: client-2 1.1.0 from 127.0.0.1 (session 50af13c8)
+2026-10-19 14:13:53.471  uplink connected: server-2 http://127.0.0.1:8766/mcp
+2026-10-19 14:16:43.157  client disconnected: client-1
+2026-10-19 14:16:43.448  client disconnected: client-2
+2026-10-19 14:16:43.535  uplink disconnected
+2026-10-19 14:16:43.649  MCP server stopped
+2026-10-19 14:16:58.054  starting MCP server 127.0.0.1:8765/mcp
+2026-10-19 14:16:58.257  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-19 14:16:59.100  client connected: client-1 1.1.0 from 127.0.0.1 (session c82d1e17)
+2026-10-19 14:17:00.992  client connected: client-2 1.1.0 from 127.0.0.1 (session 58e162c7)
+2026-10-19 14:17:03.060  uplink connected: server-2 http://127.0.0.1:8766/mcp
+2026-10-19 17:09:20.836  uplink disconnected
+2026-10-19 17:09:20.866  MCP server stopped
+2026-10-26 19:39:49.997  starting MCP server 127.0.0.1:8765/mcp
+2026-10-26 19:39:50.199  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-26 19:39:52.805  MCP server stopped
+2026-10-27 07:01:27.250  starting MCP server 127.0.0.1:8765/mcp
+2026-10-27 07:01:27.454  MCP server running on http://127.0.0.1:8765/mcp (bind 127.0.0.1)
+2026-10-27 07:01:28.656  MCP server stopped

@@ -1,0 +1,211 @@
+object FormStatus: TFormStatus
+  Left = 450
+  Height = 500
+  Top = 180
+  Width = 680
+  Caption = 'MCP Status'
+  ClientHeight = 500
+  ClientWidth = 680
+  Position = poOwnerFormCenter
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object pnlState: TPanel
+    Left = 0
+    Height = 30
+    Top = 0
+    Width = 680
+    Align = alTop
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    Caption = '  MCP:'
+    Color = 15788248
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 426
+    Top = 30
+    Width = 680
+    ActivePage = tsOverview
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 1
+    object tsOverview: TTabSheet
+      Caption = 'Overview'
+      ClientHeight = 398
+      ClientWidth = 672
+      object vleOverview: TValueListEditor
+        Left = 0
+        Height = 398
+        Top = 0
+        Width = 672
+        Align = alClient
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        TitleCaptions.Strings = (
+          'Item'
+          'Value'
+        )
+        ColWidths = (
+          220
+          448
+        )
+      end
+    end
+    object tsTools: TTabSheet
+      Caption = 'Tool calls'
+      ClientHeight = 398
+      ClientWidth = 672
+      object vleTools: TValueListEditor
+        Left = 0
+        Height = 398
+        Top = 0
+        Width = 672
+        Align = alClient
+        FixedCols = 0
+        RowCount = 2
+        TabOrder = 0
+        TitleCaptions.Strings = (
+          'Tool'
+          'Calls'
+        )
+        ColWidths = (
+          220
+          448
+        )
+      end
+    end
+    object tsLog: TTabSheet
+      Caption = 'Log'
+      ClientHeight = 398
+      ClientWidth = 672
+      object memLog: TMemo
+        Left = 0
+        Height = 398
+        Top = 0
+        Width = 672
+        Align = alClient
+        Font.Name = 'Consolas'
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssBoth
+        TabOrder = 0
+        WordWrap = False
+      end
+    end
+    object tsJson: TTabSheet
+      Caption = 'JSON'
+      ClientHeight = 398
+      ClientWidth = 672
+      object memJson: TMemo
+        Left = 0
+        Height = 398
+        Top = 0
+        Width = 672
+        Align = alClient
+        Font.Name = 'Consolas'
+        ParentFont = False
+        ReadOnly = True
+        ScrollBars = ssBoth
+        TabOrder = 0
+        WordWrap = False
+      end
+    end
+  end
+  object pnlButtons: TPanel
+    Left = 0
+    Height = 44
+    Top = 456
+    Width = 680
+    Align = alBottom
+    BevelOuter = bvNone
+    ClientHeight = 44
+    ClientWidth = 680
+    TabOrder = 2
+    object btnRefresh: TButton
+      Left = 8
+      Height = 28
+      Top = 8
+      Width = 75
+      Caption = 'Refresh'
+      OnClick = btnRefreshClick
+      TabOrder = 0
+    end
+    object chkAuto: TCheckBox
+      Left = 92
+      Height = 19
+      Top = 13
+      Width = 70
+      Caption = 'Auto 1s'
+      Checked = True
+      OnChange = chkAutoChange
+      State = cbChecked
+      TabOrder = 1
+    end
+    object btnStartStop: TButton
+      Left = 170
+      Height = 28
+      Top = 8
+      Width = 95
+      Caption = 'Stop server'
+      OnClick = btnStartStopClick
+      TabOrder = 2
+    end
+    object btnCopyJson: TButton
+      Left = 272
+      Height = 28
+      Top = 8
+      Width = 85
+      Caption = 'Copy JSON'
+      OnClick = btnCopyJsonClick
+      TabOrder = 3
+    end
+    object btnSaveJson: TButton
+      Left = 364
+      Height = 28
+      Top = 8
+      Width = 85
+      Caption = 'Save JSON...'
+      OnClick = btnSaveJsonClick
+      TabOrder = 4
+    end
+    object btnClearLog: TButton
+      Left = 456
+      Height = 28
+      Top = 8
+      Width = 80
+      Caption = 'Clear log'
+      OnClick = btnClearLogClick
+      TabOrder = 5
+    end
+    object btnClose: TButton
+      Left = 597
+      Height = 28
+      Top = 8
+      Width = 75
+      Anchors = [akTop, akRight]
+      Cancel = True
+      Caption = 'Close'
+      OnClick = btnCloseClick
+      TabOrder = 6
+    end
+  end
+  object tmrRefresh: TTimer
+    OnTimer = tmrRefreshTimer
+    Left = 600
+    Top = 40
+  end
+  object dlgSave: TSaveDialog
+    DefaultExt = '.json'
+    Filter = 'JSON|*.json|All files|*.*'
+    Options = [ofOverwritePrompt, ofEnableSizing, ofViewDetail]
+    Left = 560
+    Top = 40
+  end
+end
