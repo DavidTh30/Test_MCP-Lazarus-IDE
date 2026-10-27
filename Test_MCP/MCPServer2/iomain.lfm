@@ -1,0 +1,124 @@
+object FormIO: TFormIO
+  Left = 200
+  Height = 660
+  Top = 100
+  Width = 1080
+  Caption = 'MCP Server 2'
+  ClientHeight = 660
+  ClientWidth = 1080
+  Menu = MainMenu1
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object pnlHeader: TPanel
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 1080
+    Align = alTop
+    Alignment = taLeftJustify
+    BevelOuter = bvNone
+    Caption = '  server-2'
+    Color = clGray
+    Font.Color = clWhite
+    Font.Height = -14
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object pnlLeft: TPanel
+    Left = 0
+    Height = 626
+    Top = 34
+    Width = 390
+    Align = alLeft
+    BevelOuter = bvNone
+    ClientHeight = 626
+    ClientWidth = 390
+    TabOrder = 1
+    object pbIO: TPaintBox
+      Left = 0
+      Height = 400
+      Top = 0
+      Width = 390
+      Align = alTop
+      OnMouseDown = pbIOMouseDown
+      OnPaint = pbIOPaint
+    end
+    object Splitter2: TSplitter
+      Cursor = crVSplit
+      Left = 0
+      Height = 5
+      Top = 400
+      Width = 390
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+    object memLog: TMemo
+      Left = 0
+      Height = 221
+      Top = 405
+      Width = 390
+      Align = alClient
+      Font.Name = 'Consolas'
+      ParentFont = False
+      ReadOnly = True
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+      WordWrap = False
+    end
+  end
+  object Splitter1: TSplitter
+    Left = 390
+    Height = 626
+    Top = 34
+    Width = 5
+  end
+  object pnlTopo: TPanel
+    Left = 395
+    Height = 626
+    Top = 34
+    Width = 685
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+  end
+  object MainMenu1: TMainMenu
+    Left = 1000
+    Top = 48
+    object miFile: TMenuItem
+      Caption = '&File'
+      object miFileExit: TMenuItem
+        Caption = 'E&xit'
+        ShortCut = 32883
+        OnClick = miFileExitClick
+      end
+    end
+    object miMcp: TMenuItem
+      Caption = '&MCP'
+      object miStartStop: TMenuItem
+        Caption = 'Stop server'
+        OnClick = miStartStopClick
+      end
+      object miReset: TMenuItem
+        Caption = '&Reset IO'
+        OnClick = miResetClick
+      end
+      object miSep1: TMenuItem
+        Caption = '-'
+      end
+      object miCopyStatus: TMenuItem
+        Caption = '&Copy status + topology JSON'
+        OnClick = miCopyStatusClick
+      end
+    end
+  end
+  object tmrNode: TTimer
+    Interval = 500
+    OnTimer = tmrNodeTimer
+    Left = 1000
+    Top = 100
+  end
+end
