@@ -1,0 +1,37 @@
+object FormExtruder: TFormExtruder
+  Left = 120
+  Height = 595
+  Top = 60
+  Width = 1280
+  Caption = 'Extrusion Line PID Simulator'
+  ClientHeight = 595
+  ClientWidth = 1280
+  Constraints.MinHeight = 476
+  Constraints.MinWidth = 960
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 595
+    Top = 0
+    Width = 1280
+    ActivePage = tsProcess
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object tsProcess: TTabSheet
+      Caption = '1  Process'
+    end
+    object tsPhysics: TTabSheet
+      Caption = '2  Physics'
+    end
+  end
+  object tmrSim: TTimer
+    Interval = 100
+    OnTimer = tmrSimTimer
+    Left = 1200
+    Top = 8
+  end
+end
